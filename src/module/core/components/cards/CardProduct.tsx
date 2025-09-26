@@ -1,10 +1,12 @@
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import type { Product } from "../../../../types";
 
 export const CardProduct = ({ id, img, name, description, price }: Product) => {
   const navigate = useNavigate();
+  const location = useLocation();
   const handleClick = () => {
-    navigate(`/product`);
+    if (location.pathname === "/") navigate("/product");
+    else navigate(`/product/${id}`);
   };
   return (
     <div

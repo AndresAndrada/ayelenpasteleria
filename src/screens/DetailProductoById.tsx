@@ -1,5 +1,4 @@
 import { useParams } from "react-router-dom";
-import img from "../assets/img/Ayelén1.jpeg";
 import { useState, useEffect } from "react";
 import { ButtonSecondary } from "../module/core/ui/button/ButtonSecondary";
 import { useProductStore } from "../store";
@@ -51,7 +50,7 @@ export default function DetailProductoById() {
       <div className="flex flex-col md:flex-row gap-8 w-full max-w-4xl">
         <div className="flex-1 flex justify-center max-h-96">
           <img
-            src={img}
+            src={productFind?.img}
             alt={"img"}
             className="sm:w-4/5 sm:h-2/5 md:w-2/3 md:h-2/3 lg:w-4/5 lg:h-4/5 object-cover"
           />
