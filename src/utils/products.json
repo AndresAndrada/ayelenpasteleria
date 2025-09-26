@@ -4,7 +4,7 @@
         "img": "https://res.cloudinary.com/de7fyvmdp/image/upload/v1755453519/samples/Chocolate_cla3f3.jpg",
         "name": "Torta de Chocolate",
         "description": "Esponjosa, húmeda y con el mejor cacao. ¡Un clásico irresistible!",
-        "price": 1900,
+        "price": 19000,
          "type": "torta",
          "stock": 5
     },
