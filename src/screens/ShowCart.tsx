@@ -9,6 +9,7 @@ export default function ShowCart() {
   const { Carrito, setCarrito } = useProductStore((store) => store);
   const [message, setMessage] = useState<string>("");
   const [withdraw, setWithdraw] = useState<string>("withdraw");
+  const [cash, setCash] = useState<string>("cash");
   const [address, setAddress] = useState<string>("");
   const totalPrice = Carrito.reduce((acc, item) => {
     return acc + (typeof item.totalPrice === "number" ? item.totalPrice : 0);
@@ -25,22 +26,28 @@ export default function ShowCart() {
       withdraw === "withdraw"
         ? "LO RETIRO EN LOCAL"
         : "Necesito que lo envien a: " + `${address}`
-    } \n\nTOTAL A PAGAR: *$${totalPrice.toLocaleString()}*`;
+    }\n\n Pago con: *${cash}*\n\n TOTAL A PAGAR: *$${totalPrice.toLocaleString()}*`;
     setMessage(encodeURIComponent(messageDetails));
   };
 
   const handleDelete = (id: string) => {
     setCarrito(Carrito.filter((item) => item.id !== id));
+    setMessage("withdraw");
+  };
+
+  const handleBuyProduct = () => {
+    setCarrito([]);
+    setAddress("");
+    setWithdraw("");
+  };
+
+  const hangleChangeCheckboxWithdraw = () => {
+    setWithdraw(withdraw === "withdraw" ? "delivery" : "withdraw");
     setMessage("");
   };
 
-  const handleState = () => {
-    setCarrito([]);
-    setAddress("");
-  };
-
-  const hangleChangeCheckbox = () => {
-    setWithdraw(withdraw === "withdraw" ? "delivery" : "withdraw");
+  const hangleChangeCheckboxCash = () => {
+    setCash(cash === "cash" ? "efectivo" : "Transferencia");
     setMessage("");
   };
 
@@ -82,13 +89,24 @@ export default function ShowCart() {
       )}
       <div className="max-w-lg w-full flex flex-col justify-start mb-4 p-4 rounded-lg gap-4">
         <div className="w-full flex gap-4">
-          <p className="text-secondary font-bold ">Retiro en local</p>
+          <p className="text-secondary font-bold">Efectivo</p>
           <input
             type="checkbox"
             color="white"
             className="toggle bg-white"
             disabled={Carrito.length === 0}
-            onChange={hangleChangeCheckbox}
+            onChange={hangleChangeCheckboxCash}
+          />
+          <p className="text-secondary font-bold">Transferencia</p>
+        </div>
+        <div className="w-full flex gap-4">
+          <p className="text-secondary font-bold">Retiro en local</p>
+          <input
+            type="checkbox"
+            color="white"
+            className="toggle bg-white"
+            disabled={Carrito.length === 0}
+            onChange={hangleChangeCheckboxWithdraw}
           />
           <p className="text-secondary font-bold">Delivery</p>
         </div>
@@ -106,6 +124,7 @@ export default function ShowCart() {
               placeholder="Dirección..."
               className="input w-full text-secondary bg-white flex items-center border-2 border-primary placeholder-teal-700 rounded-xl focus:border-secondary"
               onChange={(e) => setAddress(e.target.value)}
+              disabled={Carrito.length === 0}
             />
           </div>
         </div>
@@ -116,7 +135,7 @@ export default function ShowCart() {
               className="text-center bg-secondary hover:bg-secondary/80 text-white font-semibold px-4 py-3 rounded-full shadow-xl transition-colors duration-500"
               target="_blank"
               rel="noreferrer"
-              onClick={handleState}
+              onClick={handleBuyProduct}
             >
               Enviar pedido
             </a>

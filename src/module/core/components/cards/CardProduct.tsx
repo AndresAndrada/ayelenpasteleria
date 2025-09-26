@@ -4,7 +4,7 @@ import type { Product } from "../../../../types";
 export const CardProduct = ({ id, img, name, description, price }: Product) => {
   const navigate = useNavigate();
   const handleClick = () => {
-    navigate(`/product/${id}`);
+    navigate(`/product`);
   };
   return (
     <div

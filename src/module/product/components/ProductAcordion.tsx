@@ -11,9 +11,11 @@ export const ProductAcordion = () => {
     <div className="w-full md:hidden flex flex-col items-center gap-4">
       <Acordion>
         {/* {" "} */}
-        <input type="radio" name="my-accordion-4" />
-        <div className="collapse-title font-semibold text-white bg-banner bg-cover">
-          <h3 className="text-secondary">Torta</h3>
+        <input type="radio" name="my-accordion-4" className="" />
+        <div className="m-0 p-0 collapse-title font-semibold bg-banner bg-cover">
+          <div className="w-full h-full flex justify-center items-center bg-black/45">
+            <h3 className="text-secondary">Torta</h3>
+          </div>
         </div>
         <div className="collapse-content text-sm flex flex-col gap-2">
           {cakeProduct.map((item) => {
@@ -32,8 +34,10 @@ export const ProductAcordion = () => {
       <Acordion>
         {" "}
         <input type="radio" name="my-accordion-4" />
-        <div className="collapse-title font-semibold text-white bg-bannerGalletas bg-cover bg-[center_70px]">
-          <h3 className="text-secondary">Galletas</h3>
+        <div className="m-0 p-0 collapse-title font-semibold text-white bg-bannerGalletas bg-cover bg-[center_70px]">
+          <div className="w-full h-full flex justify-center items-center bg-black/45">
+            <h3 className="text-secondary">Galletas</h3>
+          </div>
         </div>
         <div className="collapse-content text-sm flex flex-col gap-2">
           {cookiesProduct.map((item) => {
@@ -52,8 +56,10 @@ export const ProductAcordion = () => {
       <Acordion>
         {" "}
         <input type="radio" name="my-accordion-4" />
-        <div className="collapse-title font-semibold text-white bg-bannerMerienda bg-cover bg-[center_100px]">
-          <h3 className="text-secondary">Meriendas</h3>
+        <div className="m-0 p-0 collapse-title font-semibold text-white bg-bannerMerienda bg-cover bg-[center_100px]">
+          <div className="w-full h-full flex justify-center items-center bg-black/45">
+            <h3 className="text-secondary">Meriendas</h3>
+          </div>
         </div>
         <div className="collapse-content text-sm flex flex-col gap-2">
           {meriendaProduct.map((item) => {
@@ -72,8 +78,10 @@ export const ProductAcordion = () => {
       <Acordion>
         {" "}
         <input type="radio" name="my-accordion-4" />
-        <div className="collapse-title font-semibold text-white bg-bannerAlfajores bg-cover bg-[center_120px]">
-          <h3 className="text-secondary">Alfajores</h3>
+        <div className="m-0 p-0 collapse-title font-semibold text-white bg-bannerAlfajores bg-cover bg-[center_120px]">
+          <div className="w-full h-full flex justify-center items-center bg-black/45">
+            <h3 className="text-secondary">Alfajores</h3>
+          </div>
         </div>
         <div className="collapse-content text-sm flex flex-col gap-2">
           {alfajorProduct.map((item) => {
