@@ -1,0 +1,128 @@
+export const productCarousel = [
+    {
+        "id": 1,
+        "img": "https://res.cloudinary.com/de7fyvmdp/image/upload/v1755453519/samples/Chocolate_cla3f3.jpg",
+        "name": "Torta de Chocolate",
+        "description": "Esponjosa, húmeda y con el mejor cacao. ¡Un clásico irresistible!",
+        "price": 19000,
+         "type": "torta",
+         "stock": 5
+    },
+     {
+        "id": 2,
+        "img": "https://res.cloudinary.com/de7fyvmdp/image/upload/v1755453165/samples/Ayel%C3%A9n1_lpvjyv.jpg",
+        "name": "Cheesecake de Frutos Rojos",
+        "description": "Esponjosa, húmeda y con el mejor cacao. ¡Un clásico irresistible!",
+        "price": 12999,
+         "type": "torta",
+         "stock": 5
+    },
+     {
+        "id": 3,
+        "img": "https://res.cloudinary.com/de7fyvmdp/image/upload/v1755453328/samples/Desayuno_sskgqr.jpg",
+        "name": "Cupcakes Variados",
+        "description": "De vainilla, chocolate y más, decorados con buttercream de colores.",
+        "price": 14560,
+         "type": "torta",
+         "stock": 5
+    },
+     {
+        "id": 4,
+        "img": "https://res.cloudinary.com/de7fyvmdp/image/upload/v1755453771/samples/Cheesecake_frutos_rojos_wujyc5.jpg",
+        "name": "Cheesecake de Frutos Rojos",
+        "description": "Esponjosa, húmeda y con el mejor cacao. ¡Un clásico irresistible!",
+        "price": 12999,
+         "type": "torta",
+         "stock": 5
+    },
+    {
+        "id": 6,
+        "img": "https://res.cloudinary.com/de7fyvmdp/image/upload/v1755452716/samples/Torta_pisf9i.jpg",
+        "name": "Personalizada",
+        "description": "Esponjosa, húmeda y con el mejor cacao. ¡Un clásico irresistible!",
+        "price": 12999,
+         "type": "torta",
+         "stock": 5
+    },
+     {
+        "id": 7,
+        "img": "https://res.cloudinary.com/de7fyvmdp/image/upload/v1755453328/samples/Desayuno_sskgqr.jpg",
+        "name": "Cupcakes Variados",
+        "description": "De vainilla, chocolate y más, decorados con buttercream de colores.",
+        "price": 14560,
+         "type": "cookies",
+         "stock": 5
+    },
+    {
+        "id": 8,
+        "img": "https://res.cloudinary.com/de7fyvmdp/image/upload/v1755453771/samples/Cheesecake_frutos_rojos_wujyc5.jpg",
+        "name": "Cheesecake de Frutos Rojos",
+        "description": "Esponjosa, húmeda y con el mejor cacao. ¡Un clásico irresistible!",
+        "price": 12999,
+        "type": "torta",
+        "stock": 5
+    },
+    {
+        "id": 9,
+        "img": "https://res.cloudinary.com/de7fyvmdp/image/upload/v1755452716/samples/Torta_pisf9i.jpg",
+        "name": "Personalizada",
+        "description": "Esponjosa, húmeda y con el mejor cacao. ¡Un clásico irresistible!",
+        "price": 12999,
+        "type": "torta",
+        "stock": 5
+    },
+     {
+        "id": 10,
+        "img": "https://res.cloudinary.com/de7fyvmdp/image/upload/v1755453328/samples/Desayuno_sskgqr.jpg",
+        "name": "Cupcakes Variados",
+        "description": "De vainilla, chocolate y más, decorados con buttercream de colores.",
+        "price": 14560,
+        "type": "cookies",
+        "stock": 5
+    },
+     {
+        "id": 11,
+        "img": "https://res.cloudinary.com/de7fyvmdp/image/upload/v1755453771/samples/Cheesecake_frutos_rojos_wujyc5.jpg",
+        "name": "Cheesecake de Frutos Rojos",
+        "description": "Esponjosa, húmeda y con el mejor cacao. ¡Un clásico irresistible!",
+        "price": 12999,
+        "type": "torta",
+        "stock": 5
+    },
+    {
+        "id": 12,
+        "img": "https://res.cloudinary.com/de7fyvmdp/image/upload/v1755452716/samples/Torta_pisf9i.jpg",
+        "name": "Personalizada",
+        "description": "Esponjosa, húmeda y con el mejor cacao. ¡Un clásico irresistible!",
+        "price": 12999,
+        "type": "merienda",
+        "stock": 5
+    },
+    {
+        "id": 13,
+        "img": "https://res.cloudinary.com/de7fyvmdp/image/upload/v1755452716/samples/Torta_pisf9i.jpg",
+        "name": "Alfajor de Maicena",
+        "description": "Esponjosa, húmeda y con el mejor cacao. ¡Un clásico irresistible!",
+        "price": 12999,
+        "type": "alfajor",
+        "stock": 5
+    },
+    {
+        "id": 14,
+        "img": "https://res.cloudinary.com/de7fyvmdp/image/upload/v1755452716/samples/Torta_pisf9i.jpg",
+        "name": "Alfajor de Chocolate",
+        "description": "Esponjosa, húmeda y con el mejor cacao. ¡Un clásico irresistible! | PRECIO UNITARIO",
+        "price": 12999,
+        "type": "alfajor",
+        "stock": 5
+    },
+    {
+        "id": 15,
+        "img": "https://res.cloudinary.com/de7fyvmdp/image/upload/v1755452716/samples/Torta_pisf9i.jpg",
+        "name": "Alfajor de Fruta",
+        "description": "Esponjosa, húmeda y con el mejor cacao. ¡Un clásico irresistible!",
+        "price": 12999,
+        "type": "alfajor",
+        "stock": 5
+    }
+]

@@ -2,6 +2,7 @@ import { ButtonPrimary } from "../module/core/ui/button/ButtonPrimary";
 import { SectionAboutUs } from "../module/Home/components/SectionAboutUs";
 import { SectionContact } from "../module/Home/components/SectionContact";
 import { SectionProduct } from "../module/Home/components/SectionProduct";
+import { productCarousel } from "../utils/productCarousel";
 import img1 from "../assets/img/Ayelén1.jpeg";
 import img2 from "../assets/img/Ayelén2.jpeg";
 import { useEffect } from "react";
@@ -44,7 +45,7 @@ export default function Home() {
         </div>
       </div>
       <div className="w-full">
-        <SectionProduct />
+        <SectionProduct productCarousel={productCarousel} />
         <SectionAboutUs />
         <SectionContact />
       </div>

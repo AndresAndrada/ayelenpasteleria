@@ -5,13 +5,14 @@ export const CardProduct = ({ id, img, name, description, price }: Product) => {
   const navigate = useNavigate();
   const location = useLocation();
   const handleClick = () => {
-    if (location.pathname === "/") navigate("/product");
-    else navigate(`/product/${id}`);
+    if (location.pathname !== "/") navigate(`/product/${id}`);
   };
   return (
     <div
       key={id}
-      className="min-h-80 max-w-80 bg-white shadow sm:mx-1 flex flex-col hover:-translate-y-1 hover:shadow-2xl rounded-xl transition duration-500 cursor-pointer"
+      className={`min-h-80 max-w-80 bg-white shadow sm:mx-1 flex flex-col hover:-translate-y-1 hover:shadow-2xl rounded-xl transition duration-500 ${
+        location.pathname !== "/" && "cursor-pointer"
+      }`}
       onClick={handleClick}
     >
       <div className="w-full h-56 overflow-hidden rounded-t-xl">

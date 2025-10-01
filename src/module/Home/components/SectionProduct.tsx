@@ -1,20 +1,22 @@
+import { useRef } from "react";
+// Eliminados imports duplicados
+import { CardProduct } from "../../core/components/cards/CardProduct";
+import { ButtonSecondary } from "../../core/ui/button/ButtonSecondary";
 // import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import SampleNextArrow from "../../core/ui/carousel/SampleNextArrow";
 import SamplePrevArrow from "../../core/ui/carousel/SamplePrevArrow";
-import { product } from "../../../utils/product";
-import { useRef } from "react";
+// import { productCarousel } from "../../../utils/productCarousel";
+import type { Product } from "../../../types";
 import Slider from "react-slick";
-import { CardProduct } from "../../core/components/cards/CardProduct";
-import { ButtonSecondary } from "../../core/ui/button/ButtonSecondary";
 
-// interface SliderInstance {
-//   slickNext: () => void;
-//   slickPrev: () => void;
-// }
+interface SectionProductProps {
+  productCarousel: Product[];
+}
 
-export const SectionProduct = () => {
+export const SectionProduct = ({ productCarousel }: SectionProductProps) => {
+  console.log("🚀 ~ product:", productCarousel);
   const sliderRef = useRef<Slider | null>(null);
   const next = () => {
     sliderRef.current?.slickNext();
@@ -64,7 +66,7 @@ export const SectionProduct = () => {
       </div>
       <div className="slider-container min-h-96 max-w-60 sm:w-full sm:max-w-96 md:max-w-2xl lg:max-w-4xl md:pl-0">
         <Slider {...settings} ref={sliderRef}>
-          {product.splice(0, 6).map((item) => {
+          {productCarousel.slice(0, 6).map((item) => {
             return (
               <CardProduct
                 key={item.id}
