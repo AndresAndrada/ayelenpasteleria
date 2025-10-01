@@ -1,5 +1,4 @@
 import { useNavigate } from "react-router-dom";
-
 interface CardProductAcordionProps {
   id?: number;
   img?: string;

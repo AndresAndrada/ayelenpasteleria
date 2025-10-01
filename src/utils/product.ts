@@ -1,4 +1,4 @@
-[
+export const product = [
     {
         "id": 1,
         "img": "https://res.cloudinary.com/de7fyvmdp/image/upload/v1755453519/samples/Chocolate_cla3f3.jpg",

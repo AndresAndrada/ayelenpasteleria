@@ -3,7 +3,7 @@ import { FilterProductComponents } from "../module/product/components/FilterProd
 import { ProductAcordion } from "../module/product/components/ProductAcordion";
 import { ProductFilter } from "../module/product/components/ProductFilter";
 import type { Product } from "../types";
-import product from "../utils/products.json";
+import { product } from "../utils/product";
 import { scrollToTop } from "../utils/scrollToTop";
 
 export default function Product() {

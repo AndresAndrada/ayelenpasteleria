@@ -1,4 +1,5 @@
-import product from "../../../utils/products.json";
+import type { Product } from "../../../types";
+import { product } from "../../../utils/product";
 import { CardProductAcordion } from "../../core/components/cards/CardProductAcordion";
 import Acordion from "../../core/ui/acordion/Acordion";
 
@@ -40,7 +41,7 @@ export const ProductAcordion = () => {
           </div>
         </div>
         <div className="collapse-content text-sm flex flex-col gap-2">
-          {cookiesProduct.map((item) => {
+          {cookiesProduct.map((item: Product) => {
             return (
               <CardProductAcordion
                 key={item.id}

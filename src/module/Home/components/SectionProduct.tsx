@@ -3,7 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import SampleNextArrow from "../../core/ui/carousel/SampleNextArrow";
 import SamplePrevArrow from "../../core/ui/carousel/SamplePrevArrow";
-import product from "../../../utils/products.json";
+import { product } from "../../../utils/product";
 import { useRef } from "react";
 import Slider from "react-slick";
 import { CardProduct } from "../../core/components/cards/CardProduct";

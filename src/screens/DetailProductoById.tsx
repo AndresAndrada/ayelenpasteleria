@@ -4,7 +4,7 @@ import { ButtonSecondary } from "../module/core/ui/button/ButtonSecondary";
 import { useProductStore } from "../store";
 import toast from "react-hot-toast";
 // import type { Product } from "../types";
-import products from "../utils/products.json";
+import { product } from "../utils/product";
 import { scrollToTop } from "../utils/scrollToTop";
 
 export default function DetailProductoById() {
@@ -13,7 +13,7 @@ export default function DetailProductoById() {
   const [counter, setCounter] = useState<number>(0);
   const [totalPrice, setTotalPrice] = useState<number>(0);
   const [details, setDetails] = useState<string>("");
-  const productFind = products.find((p) => p.id === Number(id));
+  const productFind = product.find((p) => p.id === Number(id));
 
   useEffect(() => {
     scrollToTop({ smooth: true });
