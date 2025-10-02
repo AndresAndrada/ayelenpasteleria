@@ -1,13 +1,10 @@
 import { useRef } from "react";
-// Eliminados imports duplicados
 import { CardProduct } from "../../core/components/cards/CardProduct";
 import { ButtonSecondary } from "../../core/ui/button/ButtonSecondary";
-// import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import SampleNextArrow from "../../core/ui/carousel/SampleNextArrow";
 import SamplePrevArrow from "../../core/ui/carousel/SamplePrevArrow";
-// import { productCarousel } from "../../../utils/productCarousel";
 import type { Product } from "../../../types";
 import Slider from "react-slick";
 
