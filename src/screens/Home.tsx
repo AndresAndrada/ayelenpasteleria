@@ -47,7 +47,7 @@ export default function Home() {
       <div className="w-full">
         <SectionProduct productCarousel={productCarousel} />
         <SectionAboutUs />
-        <SectionContact />
+        {/* <SectionContact /> */}
       </div>
     </main>
     // </div>
