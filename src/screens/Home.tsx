@@ -1,6 +1,5 @@
 import { ButtonPrimary } from "../module/core/ui/button/ButtonPrimary";
 import { SectionAboutUs } from "../module/Home/components/SectionAboutUs";
-import { SectionContact } from "../module/Home/components/SectionContact";
 import { SectionProduct } from "../module/Home/components/SectionProduct";
 import { productCarousel } from "../utils/productCarousel";
 import img1 from "../assets/img/Ayelén1.jpeg";
